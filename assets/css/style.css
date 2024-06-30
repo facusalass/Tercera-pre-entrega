@@ -508,6 +508,7 @@ background-color: #d6fad5;
   margin-top: 490px;
 
 }
+
 }
 @media(min-height:1000px){
   .footer-compras{
@@ -515,15 +516,19 @@ background-color: #d6fad5;
   
   }
   }
-  @media(min-height:1100px){
+
+
+  @media(min-height:1180px){
     .footer-compras{
-      margin-top: 590px;
+      margin-top: 620px;
     
     }
     }
+
+
     @media(min-height:1200px){
       .footer-compras{
-        margin-top:710px;
+        margin-top:780px;
       
       }
     }
