@@ -116,7 +116,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }).then((resultado) => {
             if (resultado.isConfirmed) {
                 const cuotas = parseInt(resultado.value);
-                if (!isNaN(cuotas)) { // Verificar si cuotas es un número válido
+                if (!isNaN(cuotas)) {
                     tarjetaCuotas(tarjetaElegida, cuotas);
                 }
             }
@@ -196,6 +196,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
+
+// Ocultar el logo cuando se abre el navbar
 document.addEventListener('DOMContentLoaded', function() {
     const navbarToggler = document.querySelector('.navbar-toggler');
     const logoPao = document.querySelector('.logopao');
@@ -205,11 +208,10 @@ document.addEventListener('DOMContentLoaded', function() {
       if (navbarContent.classList.contains('ver')) {
         logoPao.style.visibility = 'visible'; 
       } else {
-        logoPao.style.visibility = 'hidden'; // Ocultar el logo cuando se abre el navbar
+        logoPao.style.visibility = 'hidden'; 
       }
     });
-  
-    // Evento para mostrar el logo cuando se oculta el navbar
+
     navbarContent.addEventListener('hidden.bs.collapse', function() {
       logoPao.style.visibility = 'visible';
     });

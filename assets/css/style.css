@@ -36,7 +36,7 @@ font-weight: 600;
 }
 .nav-item{
     color: aliceblue;
-margin-right: 60px;
+margin-right: 70px;
  font-size:21px;
 }
 .nav-link:hover{
@@ -60,26 +60,16 @@ margin-right: 60px;
       visibility: hidden;
 
       }
-      .navbar-nav.custom-menu {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+
       .logopao{
 
-        height: 55px;
-        width: 220px;
+        height: 50px;
+        width: 210px;
     }    
-    .carro{
-   display: flex;
-   justify-content: flex-end;
-   margin-bottom: 0px;
- position: relative;
- top: -42px;
-right: 50px;
-    }
-      
+
+    .navbar-collapse {
+      max-height: 125px; /* Ajusta según sea necesario */
+  }
   }
   @media(max-width:510px){
     .navbar-toggler {
@@ -96,7 +86,16 @@ right: 50px;
         left: -10px;
        margin-bottom: 10px;
       }
-  
+      .navbar-nav.custom-menu {
+    display: block;
+        justify-content: center;
+      }
+      .carro{
+        display: flex;
+        justify-content: flex-start;
+        top: 0px;
+left: 5px;
+         }
   }
   @media(max-width:474px){
     .navbar-toggler {
@@ -115,12 +114,12 @@ right: 50px;
             left: 50%;
             transform: translateX(-50%);
           }
-
+       
   }
   @media(max-width:560px){
     .logopao{
         height: 50px;
-        width: 150px;
+        width: 170px;
     }
   
   }
@@ -128,9 +127,22 @@ right: 50px;
     .logopao{
         display: flex;
   justify-content: right;
+  margin-left: 215px;
+    }
+  }
+
+  @media(max-width:380px){
+    .logopao{
   margin-left: 170px;
     }
   }
+  @media(max-width:340px){
+    .logopao{
+      margin-left: 140px;
+        }
+  
+  }
+
 .carro{
 margin-right: 20px;
 font-size: 21px;
@@ -235,14 +247,13 @@ border: solid rgb(83, 49, 3) 3px;
 .compra {
     background-color: rgb(233, 156, 129);
     color: rgb(221, 162, 206);
-    padding: 1px 1px;
-    font-size: 18px;
+    padding: 5px;
+    font-size: 20px;
     font-weight: 700;
 border: solid black 2px;
-height: 45px;
-position: relative;
-top:78px;
-left: -275px;
+display: flex;
+justify-content: center;
+margin-top: 20px;
   }
   
   .compra a {
@@ -251,7 +262,7 @@ left: -275px;
   }
   
   .compra a:hover {
-    color: rgb(0, 0, 0);
+    color: rgb(247, 205, 166);
   }
 
 
@@ -268,13 +279,7 @@ left: -275px;
       font-size: 20px;
     }
   
-    .compra {
-      top: 20px;
-    position: relative;
-   left: -270px;
-   height: 70px;
- width: 120px;
-    }
+
   }
   .titulo2-comprar {
     visibility: hidden;
@@ -312,13 +317,7 @@ left: -275px;
         
         
 
-          .compra{
-            top: 20px;
-          position: relative;
-         left: -170px;
-         height: 70px;
-       width: 180px;
-          }
+
           .titulo2 {
             text-align: center;
             margin-top: 20px;
@@ -344,35 +343,15 @@ left: -275px;
     .titulo2-comprar {
         visibility: hidden;
           }
-        
-          .compra{
-            top: 20px;
-          position: relative;
-         left: -170px;
-         height: 70px;
-       width: 180px;
-          }
+  
   }
   @media (min-width: 339px) and (max-width: 426px) {
-    .compra {
-        top: 20px;
-      position: relative;
-     left: -147px;
-     height: 70px;
-   width: 180px;
-      }
+
 
   }
   
   @media(max-width:338px){
-    .compra {
 
-        height: 65px;
-        width: 210px;
-        position: relative;
-        top: 17px;
-        left: -115px;
-          }
             .titulo2-comprar {
 visibility: hidden;
   }
@@ -380,17 +359,7 @@ visibility: hidden;
 
   }
   @media(min-width:769px){
-    .titulo2-comprar {
-      visibility: visible;
-      font-size: 22px;
-      color: black;
-      font-weight: 700;
-      text-align: center;
-      margin-top: 40px;
-   margin-left: 65px;
-   position: relative;
-   left: 1px;
-    }
+    
     .titulo2 {
         text-align: center;
         margin-top: 20px;
@@ -477,7 +446,7 @@ display: flex;
 justify-content: center;
 font-family: "Noto Sans", sans-serif;
 font-weight: 600;
-margin-top: 60px;
+margin-top: 80px;
 }
 .boton-compra{
   font-size: 24px;
@@ -487,16 +456,14 @@ margin-top: 60px;
  font-family: "Oswald", sans-serif;
 margin-right: 2px;
 border: solid black 2px;
-margin-bottom: 5px;
-
 }
 .boton-compra a{
 text-decoration: none;
 color: #e9c7c7;
 
 }
-footer{
-margin-top: 120px;
+.footer-index{
+margin-top: 110px;
 background-color: pink;
 border: solid black 2px;
 padding: 0px;
@@ -521,10 +488,45 @@ margin-top: 10px;
 background-color: #d6fad5;
 }
 .footer-compras{
-margin-top: 115px;
+  background-color: pink;
+  border: solid black 2px;
+  bottom: 0;
+  width: 100%;
+  margin-top: 125px;
+}
+@media (min-height: 590px) and (max-height: 770px) {
+  .footer-compras{
+    margin-top: 285px;
+  }
+
 
 }
 
+
+@media(min-height:772px){
+.footer-compras{
+  margin-top: 490px;
+
+}
+}
+@media(min-height:1000px){
+  .footer-compras{
+    margin-top: 555px;
+  
+  }
+  }
+  @media(min-height:1100px){
+    .footer-compras{
+      margin-top: 590px;
+    
+    }
+    }
+    @media(min-height:1200px){
+      .footer-compras{
+        margin-top:710px;
+      
+      }
+    }
 .compras-titulo{
 font-size: 40px;
 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -532,4 +534,16 @@ color: rgb(250, 205, 189);
 margin-top: 10px;
 text-shadow: black 2px 2px 2px;
 font-weight: 600;
+}
+@media(max-width:560px){
+  .compras-titulo{
+    font-size: 30px;
+
+  }
+}
+@media(max-width:370px){
+  .compras-titulo{
+    font-size: 26px;
+
+  }
 }
